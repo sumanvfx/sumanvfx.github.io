@@ -1,0 +1,16 @@
+{
+  "contact": {
+    "email": "learn.suman25@gmail.com",
+    "phone": "+91 8083484476",
+    "address": "New Ashok Nagar, New Delhi"
+  },
+  "menu": [
+    { "name": "Home", "href": "#home" },
+    { "name": "About", "href": "#about" },
+    { "name": "Services", "href": "#services" },
+    { "name": "Projects", "href": "#projects" },
+    { "name": "Blog", "href": "#blog" },
+    { "name": "Reels", "href": "#reels" },
+    { "name": "Contact", "href": "#contact" }
+  ]
+}

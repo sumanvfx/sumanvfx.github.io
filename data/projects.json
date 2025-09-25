@@ -1,0 +1,60 @@
+{
+  "videography": [
+    {
+      "id": 1,
+      "title": "Motion Graphics",
+      "category": "Animation",
+      "featured": true,
+      "image": "/api/placeholder/400/300",
+      "description": "Dynamic motion graphics and animation projects for brands and digital media."
+    },
+    {
+      "id": 2,
+      "title": "Gym",
+      "category": "Fitness",
+      "featured": true,
+      "image": "/api/placeholder/400/300",
+      "description": "High-energy fitness and gym promotional videos showcasing workout routines and facilities."
+    },
+    {
+      "id": 3,
+      "title": "Architecture and Real Estate",
+      "category": "Real Estate",
+      "featured": true,
+      "image": "/api/placeholder/400/300",
+      "description": "Professional architectural walkthroughs and real estate showcase videos."
+    },
+    {
+      "id": 4,
+      "title": "Automobile",
+      "category": "Automotive",
+      "featured": true,
+      "image": "/api/placeholder/400/300",
+      "description": "Automotive videography featuring luxury cars, reviews, and promotional content."
+    },
+    {
+      "id": 5,
+      "title": "Helmet Paint",
+      "category": "Product",
+      "featured": true,
+      "image": "/api/placeholder/400/300",
+      "description": "Product showcase videos for custom helmet painting and design services."
+    },
+    {
+      "id": 6,
+      "title": "Café and Restaurant",
+      "category": "Food & Beverage",
+      "featured": true,
+      "image": "/api/placeholder/400/300",
+      "description": "Appetizing food and restaurant atmosphere videos that capture the dining experience."
+    },
+    {
+      "id": 7,
+      "title": "Food and Beverages",
+      "category": "Food & Beverage",
+      "featured": true,
+      "image": "/api/placeholder/400/300",
+      "description": "Creative food photography and beverage showcase videos for culinary brands."
+    }
+  ]
+}
