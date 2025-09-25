@@ -16,5 +16,5 @@ export default defineConfig(({ mode }) => ({
     },
   },
   // 👇 Add this for GitHub Pages deployment
-  base: "https://suman-vfx.github.io"
+  base: "/"
 }));
