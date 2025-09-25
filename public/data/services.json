@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "SEO",
+      "description": "Search Engine Optimization to boost your online visibility and rankings."
+    },
+    {
+      "id": 2,
+      "title": "Creative Marketing",
+      "description": "Innovative marketing strategies that capture attention and drive engagement."
+    },
+    {
+      "id": 3,
+      "title": "Website Design",
+      "description": "Modern, responsive websites that convert visitors into customers."
+    },
+    {
+      "id": 4,
+      "title": "Social Media Marketing",
+      "description": "Strategic social media campaigns that build brand awareness and community."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "social": [
+    {
+      "name": "Facebook",
+      "url": "https://facebook.com/elevn11",
+      "icon": "facebook"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/elevn11",
+      "icon": "twitter"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://instagram.com/elevn11",
+      "icon": "instagram"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/suman-saurabh-745a61159",
+      "icon": "linkedin"
+    }
+  ]
+}
