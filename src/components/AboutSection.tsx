@@ -10,9 +10,9 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            I'm a professional video editor with over 5 years of experience transforming raw footage into compelling visual stories. From dynamic social media content to polished corporate videos, I bring creativity, precision, and a keen eye for detail to every project I work on.
-
-Over the years, I’ve collaborated with brands, creators, and businesses to craft videos that not only engage audiences but also deliver results. Whether it’s editing for YouTube, promotional campaigns, documentaries, or short films, I take pride in creating smooth, impactful edits that align with the client’s vision and message.
+I'm a professional video editor with 5 years of experience in creating engaging video content.
+Skilled in editing, color grading, motion graphics, and sound design using industry-standard tools.
+I turn ideas into compelling visual stories for brands, creators, and businesses.            
           </p>
         </div>
 
@@ -35,14 +35,12 @@ Over the years, I’ve collaborated with brands, creators, and businesses to cra
           {/* About Content */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">Expert In</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Profile Summary</h3>
               <p className="text-muted-foreground leading-relaxed">
-               <ul>
-                  <li>Video editing and color grading</li>
-                  <li>Motion graphics and visual effects</li>
-                  <li>Sound design and audio enhancement</li>
-                  <li>Storyboarding and visual storytelling</li>
-               </ul> 
+               Experienced video editor with 5+ years of delivering high-quality, engaging video content for clients worldwide.
+                I specialize in editing, color grading, motion graphics, and sound design using Adobe Premiere Pro, After Effects,
+                and DaVinci Resolve. Whether it’s YouTube videos, social media content, or promotional clips,
+                I turn your raw footage into compelling visual stories that connect with your audience and elevate your brand.
               </p>
             </div>
 
@@ -55,7 +53,10 @@ Over the years, I’ve collaborated with brands, creators, and businesses to cra
                     <h4 className="font-bold text-foreground">Car&Bike - Video Editor</h4>
                     <p className="text-portfolio-orange text-sm">05/2024 – Present | Delhi, India</p>
                     <p className="text-muted-foreground text-sm mt-2">
-                      Edited 150+ automotive reviews, increasing YouTube engagement by 30%
+• Edited over 450+ automotive reviews and campaigns, increasing YouTube
+engagement by 30%.
+• Worked closely with motion design and content teams.
+• Maintained brand tone while delivering fast-paced edits.
                     </p>
                   </CardContent>
                 </Card>
@@ -65,10 +66,22 @@ Over the years, I’ve collaborated with brands, creators, and businesses to cra
                     <h4 className="font-bold text-foreground">Premix Studio Pvt. Ltd. - Video Editor</h4>
                     <p className="text-portfolio-orange text-sm">06/2022 – 05/2024 | Delhi, India</p>
                     <p className="text-muted-foreground text-sm mt-2">
-                      Handled corporate videos, promos, and post-production workflows
+•Handled corporate videos, promos, and post-production.
+• Designed motion graphics using After Effects.
+• Managed studio editing workflows, file delivery & asset management.
                     </p>
                   </CardContent>
                 </Card>
+                <Card className="bg-gradient-card border-portfolio-border">
+                  <CardContent className="p-4">
+                    <h4 className="font-bold text-foreground">Mentors Adda Pvt. Ltd. - Video Editor</h4>
+                    <p className="text-portfolio-orange text-sm">01/2021 – 01/2022 | Delhi, India</p>
+                    <p className="text-muted-foreground text-sm mt-2">
+• Edited educational video content and social ads.
+• Assisted in creative planning and asset creation.
+                    </p>
+                  </CardContent>
+                </Card> 
               </div>
             </div>
 
@@ -76,7 +89,7 @@ Over the years, I’ve collaborated with brands, creators, and businesses to cra
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Skills</h3>
               <div className="flex flex-wrap gap-2">
-                {['Adobe Premiere Pro', 'After Effects', 'Photoshop', 'Illustrator', 'Cinematography'].map((skill) => (
+                {['Adobe Premiere Pro', 'After Effects', 'Photoshop', 'Illustrator', 'Cinematography','DaVinci Resolve'].map((skill) => (
                   <span
                     key={skill}
                     className="bg-portfolio-orange/10 text-portfolio-orange px-3 py-1 rounded-full text-sm font-medium border border-portfolio-orange/20"
