@@ -10,7 +10,9 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Creative and detail-oriented video editor with 3+ years of experience crafting engaging content for digital platforms.
+            I'm a professional video editor with over 5 years of experience transforming raw footage into compelling visual stories. From dynamic social media content to polished corporate videos, I bring creativity, precision, and a keen eye for detail to every project I work on.
+
+Over the years, I’ve collaborated with brands, creators, and businesses to craft videos that not only engage audiences but also deliver results. Whether it’s editing for YouTube, promotional campaigns, documentaries, or short films, I take pride in creating smooth, impactful edits that align with the client’s vision and message.
           </p>
         </div>
 
@@ -33,10 +35,14 @@ const AboutSection = () => {
           {/* About Content */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">Profile</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Expert In</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Proficient in storytelling, editing, and motion graphics with a strong understanding of modern trends and formats. 
-                I specialize in creating compelling visual narratives that captivate audiences and bring brands to life.
+               <ul>
+                  <li>Video editing and color grading</li>
+                  <li>Motion graphics and visual effects</li>
+                  <li>Sound design and audio enhancement</li>
+                  <li>Storyboarding and visual storytelling</li>
+               </ul> 
               </p>
             </div>
 
