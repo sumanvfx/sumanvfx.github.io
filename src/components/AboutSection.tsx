@@ -54,9 +54,7 @@ I turn ideas into compelling visual stories for brands, creators, and businesses
                     <p className="text-portfolio-orange text-sm">05/2024 – Present | Delhi, India</p>
                     <p className="text-muted-foreground text-sm mt-2">
 • Edited over 450+ automotive reviews and campaigns, increasing YouTube
-engagement by 30%.
-• Worked closely with motion design and content teams.
-• Maintained brand tone while delivering fast-paced edits.
+engagement by 30%.</br>• Worked closely with motion design and content teams.</br>• Maintained brand tone while delivering fast-paced edits.
                     </p>
                   </CardContent>
                 </Card>
@@ -66,9 +64,7 @@ engagement by 30%.
                     <h4 className="font-bold text-foreground">Premix Studio Pvt. Ltd. - Video Editor</h4>
                     <p className="text-portfolio-orange text-sm">06/2022 – 05/2024 | Delhi, India</p>
                     <p className="text-muted-foreground text-sm mt-2">
-•Handled corporate videos, promos, and post-production.
-• Designed motion graphics using After Effects.
-• Managed studio editing workflows, file delivery & asset management.
+•Handled corporate videos, promos, and post-production.</br>• Designed motion graphics using After Effects.</br>• Managed studio editing workflows, file delivery & asset management.
                     </p>
                   </CardContent>
                 </Card>
@@ -77,8 +73,7 @@ engagement by 30%.
                     <h4 className="font-bold text-foreground">Mentors Adda Pvt. Ltd. - Video Editor</h4>
                     <p className="text-portfolio-orange text-sm">01/2021 – 01/2022 | Delhi, India</p>
                     <p className="text-muted-foreground text-sm mt-2">
-• Edited educational video content and social ads.
-• Assisted in creative planning and asset creation.
+• Edited educational video content and social ads.</br>• Assisted in creative planning and asset creation.
                     </p>
                   </CardContent>
                 </Card> 
