@@ -34,7 +34,7 @@ I turn ideas into compelling visual stories for brands, creators, and businesses
 
           {/* About Content */}
           <div className="space-y-6">
-            <div>
+            {/* <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Profile Summary</h3>
               <p className="text-muted-foreground leading-relaxed">
             
@@ -42,7 +42,7 @@ I turn ideas into compelling visual stories for brands, creators, and businesses
                 and DaVinci Resolve. Whether it’s YouTube videos, social media content, or promotional clips,
                 I turn your raw footage into compelling visual stories that connect with your audience and elevate your brand.
               </p>
-            </div>
+            </div> */}
 
             {/* Experience */}
             <div>
