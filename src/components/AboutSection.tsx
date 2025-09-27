@@ -37,7 +37,7 @@ I turn ideas into compelling visual stories for brands, creators, and businesses
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Profile Summary</h3>
               <p className="text-muted-foreground leading-relaxed">
-               Experienced video editor with 5+ years of delivering high-quality, engaging video content for clients worldwide.
+            
                 I specialize in editing, color grading, motion graphics, and sound design using Adobe Premiere Pro, After Effects,
                 and DaVinci Resolve. Whether it’s YouTube videos, social media content, or promotional clips,
                 I turn your raw footage into compelling visual stories that connect with your audience and elevate your brand.
@@ -54,8 +54,15 @@ I turn ideas into compelling visual stories for brands, creators, and businesses
                     <p className="text-portfolio-orange text-sm">05/2024 – Present | Delhi, India</p>
                     <p className="text-muted-foreground text-sm mt-2">
 • Edited over 450+ automotive reviews and campaigns, increasing YouTube
-engagement by 30%. • Worked closely with motion design and content teams.• Maintained brand tone while delivering fast-paced edits.
+engagement by 30%.
                     </p>
+                   <p className="text-muted-foreground text-sm mt-2">
+• Worked closely with motion design and content teams.
+                    </p>
+
+                     <p className="text-muted-foreground text-sm mt-2">
+• Maintained brand tone while delivering fast-paced edits.
+                    </p> 
                   </CardContent>
                 </Card>
 
