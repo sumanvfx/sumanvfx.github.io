@@ -18,15 +18,15 @@ const AboutSection = () => {
           {/* Profile Image */}
           <div className="relative">
             <div className="aspect-square bg-gradient-card rounded-2xl p-8 border border-portfolio-border shadow-card">
-              <div className="w-full h-full bg-muted rounded-xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-portfolio-orange rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-background font-bold text-5xl">SS</span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground">Suman Saurabh</h3>
-                  <p className="text-portfolio-orange font-medium">Creative Video Editor | Cinematographer</p>
-                </div>
-              </div>
+
+              <div className="w-full h-full rounded-xl overflow-hidden">
+                <img
+                  src="/images/profile.jpeg" // put your image path here
+                  alt="Suman Saurabh"
+                  className="w-full h-full object-cover"
+                />
+              </div>              
+            
             </div>
           </div>
 
