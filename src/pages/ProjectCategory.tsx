@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { X, Play } from 'lucide-react';
 
 interface Project {
   id: number;
@@ -12,6 +13,7 @@ interface Project {
   featured: boolean;
   image: string;
   description: string;
+  videoUrl?: string;
 }
 
 interface ProjectsData {
@@ -23,6 +25,7 @@ const ProjectCategory = () => {
   const navigate = useNavigate();
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
   useEffect(() => {
     const loadProjects = async () => {
@@ -37,7 +40,15 @@ const ProjectCategory = () => {
           project => project.category.toLowerCase() === categoryName.toLowerCase()
         );
         
-        setProjects(filteredProjects);
+        // Add sample video URLs for demonstration
+        const projectsWithVideos = filteredProjects.map((project, index) => ({
+          ...project,
+          videoUrl: index % 2 === 0 
+            ? 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1' 
+            : 'https://www.youtube.com/embed/jNQXAC9IVRw?autoplay=1'
+        }));
+        
+        setProjects(projectsWithVideos);
       } catch (error) {
         console.error('Error loading projects:', error);
       } finally {
@@ -130,9 +141,12 @@ const ProjectCategory = () => {
                       )}
                       
                       {/* Play Button Overlay */}
-                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div 
+                        className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        onClick={() => project.videoUrl && setSelectedVideo(project.videoUrl)}
+                      >
                         <div className="w-16 h-16 bg-portfolio-orange/90 rounded-full flex items-center justify-center">
-                          <div className="w-0 h-0 border-l-[12px] border-l-background border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent ml-1"></div>
+                          <Play className="h-8 w-8 text-background" />
                         </div>
                       </div>
                     </div>
@@ -148,7 +162,10 @@ const ProjectCategory = () => {
                         <span className="text-portfolio-orange text-sm font-medium">
                           {project.category}
                         </span>
-                        <button className="text-portfolio-orange hover:text-portfolio-orange-hover text-sm font-medium transition-colors duration-300">
+                        <button 
+                          className="text-portfolio-orange hover:text-portfolio-orange-hover text-sm font-medium transition-colors duration-300"
+                          onClick={() => project.videoUrl && setSelectedVideo(project.videoUrl)}
+                        >
                           Watch Video →
                         </button>
                       </div>
@@ -177,6 +194,30 @@ const ProjectCategory = () => {
       </section>
 
       <Footer />
+      
+      {/* Video Dialog */}
+      {selectedVideo && (
+        <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="relative w-full max-w-4xl bg-card rounded-lg shadow-lg overflow-hidden">
+            <div className="aspect-video w-full">
+              <iframe 
+                src={selectedVideo}
+                className="w-full h-full" 
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              ></iframe>
+            </div>
+            <button 
+              onClick={() => setSelectedVideo(null)}
+              className="absolute top-4 right-4 bg-background/80 p-2 rounded-full hover:bg-background transition-colors"
+            >
+              <X className="h-6 w-6 text-foreground" />
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
