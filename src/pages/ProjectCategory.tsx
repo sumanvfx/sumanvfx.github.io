@@ -45,7 +45,7 @@ const ProjectCategory = () => {
           ...project,
           videoUrl: index % 2 === 0 
             ? 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1' 
-            : 'https://youtu.be/BQJfBztkYtQ?autoplay=1'
+            : 'https://youtu.be/-lyIQSkP1Js?list=RD-lyIQSkP1Js?autoplay=1'
         }));
         
         setProjects(projectsWithVideos);
