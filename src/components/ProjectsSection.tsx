@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
+import { X, Play } from 'lucide-react';
 
 interface Project {
   id: number;
@@ -9,6 +10,7 @@ interface Project {
   featured: boolean;
   image: string;
   description: string;
+  videoUrl?: string;
 }
 
 interface ProjectsData {
@@ -18,6 +20,7 @@ interface ProjectsData {
 const ProjectsSection = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -26,7 +29,16 @@ const ProjectsSection = () => {
         setLoading(true);
         const response = await fetch('/data/projects.json');
         const data: ProjectsData = await response.json();
-        setProjects(data.videography);
+        
+        // Add sample YouTube video URLs for demonstration
+        const projectsWithVideos = data.videography.map(project => ({
+          ...project,
+          videoUrl: project.id % 2 === 0 
+            ? "https://www.youtube.com/embed/dQw4w9WgXcQ" // Sample YouTube URL
+            : "https://www.youtube.com/embed/jNQXAC9IVRw" // Another sample URL
+        }));
+        
+        setProjects(projectsWithVideos);
       } catch (error) {
         console.error('Error loading projects:', error);
       } finally {
@@ -42,6 +54,15 @@ const ProjectsSection = () => {
 
   const handleCategoryClick = (category: string) => {
     navigate(`/projects/${category.toLowerCase().replace(/\s+/g, '-')}`);
+  };
+  
+  const openVideoDialog = (e: React.MouseEvent, videoUrl: string) => {
+    e.stopPropagation();
+    setSelectedVideo(videoUrl);
+  };
+  
+  const closeVideoDialog = () => {
+    setSelectedVideo(null);
   };
 
   if (loading) {
@@ -94,6 +115,17 @@ const ProjectsSection = () => {
                     <div className="absolute top-4 right-4 bg-portfolio-orange text-background px-3 py-1 rounded-full text-sm font-medium">
                       {categoryProjects.length} Projects
                     </div>
+                    
+                    {/* Video Play Button - Only show if featured project has a video URL */}
+                    {featuredProject?.videoUrl && (
+                      <button
+                        onClick={(e) => openVideoDialog(e, featuredProject.videoUrl!)}
+                        className="absolute bottom-4 right-4 bg-background/20 backdrop-blur-sm text-white p-2 rounded-full hover:bg-background/40 transition-colors group-hover:opacity-100 opacity-0"
+                        aria-label="Play video"
+                      >
+                        <Play size={24} className="fill-portfolio-orange" />
+                      </button>
+                    )}
                   </div>
                   
                   <div className="p-6">
@@ -107,6 +139,14 @@ const ProjectsSection = () => {
                       <span className="text-portfolio-orange text-sm font-medium">
                         Click to explore →
                       </span>
+                      {featuredProject?.videoUrl && (
+                        <button
+                          onClick={(e) => openVideoDialog(e, featuredProject.videoUrl!)}
+                          className="text-portfolio-orange hover:text-portfolio-orange-hover flex items-center gap-1 text-sm font-medium"
+                        >
+                          <Play size={16} /> Watch Video
+                        </button>
+                      )}
                     </div>
                   </div>
                 </CardContent>
@@ -125,6 +165,35 @@ const ProjectsSection = () => {
           </button>
         </div>
       </div>
+      
+      {/* YouTube Video Dialog */}
+      {selectedVideo && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 md:p-8"
+          onClick={closeVideoDialog}
+        >
+          <div className="relative w-full max-w-4xl max-h-[90vh] flex flex-col">
+            {/* Close Button */}
+            <button 
+              className="absolute -top-12 right-0 z-10 bg-background/20 backdrop-blur-sm text-white p-2 rounded-full hover:bg-background/40 transition-colors"
+              onClick={closeVideoDialog}
+            >
+              <X size={24} />
+            </button>
+            
+            {/* YouTube Embed */}
+            <div className="relative w-full overflow-hidden rounded-lg" style={{ paddingBottom: '56.25%' }}>
+              <iframe 
+                src={`${selectedVideo}?autoplay=1`}
+                title="YouTube video player"
+                className="absolute top-0 left-0 w-full h-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
