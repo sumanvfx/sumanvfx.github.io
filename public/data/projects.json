@@ -6,7 +6,12 @@
       "category": "Animation",
       "featured": true,
       "image": "/api/placeholder/400/300",
-      "description": "Dynamic motion graphics and animation projects for brands and digital media."
+      "description": "Dynamic motion graphics and animation projects for brands and digital media.",
+      "video": {
+        "type": "local",
+        "source": "/videos/1.mp4",
+        "thumbnail": "/api/placeholder/400/300"
+      }
     },
     {
       "id": 2,
@@ -14,7 +19,12 @@
       "category": "Fitness",
       "featured": true,
       "image": "/api/placeholder/400/300",
-      "description": "High-energy fitness and gym promotional videos showcasing workout routines and facilities."
+      "description": "High-energy fitness and gym promotional videos showcasing workout routines and facilities.",
+      "video": {
+        "type": "youtube",
+        "source": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "thumbnail": "/api/placeholder/400/300"
+      }
     },
     {
       "id": 3,
@@ -22,7 +32,12 @@
       "category": "Real Estate",
       "featured": true,
       "image": "/api/placeholder/400/300",
-      "description": "Professional architectural walkthroughs and real estate showcase videos."
+      "description": "Professional architectural walkthroughs and real estate showcase videos.",
+      "video": {
+        "type": "local",
+        "source": "/videos/1.mp4",
+        "thumbnail": "/api/placeholder/400/300"
+      }
     },
     {
       "id": 4,
@@ -30,7 +45,12 @@
       "category": "Automotive",
       "featured": true,
       "image": "/api/placeholder/400/300",
-      "description": "Automotive videography featuring luxury cars, reviews, and promotional content."
+      "description": "Automotive videography featuring luxury cars, reviews, and promotional content.",
+      "video": {
+        "type": "youtube",
+        "source": "https://www.youtube.com/embed/jNQXAC9IVRw",
+        "thumbnail": "/api/placeholder/400/300"
+      }
     },
     {
       "id": 5,
@@ -38,7 +58,12 @@
       "category": "Product",
       "featured": true,
       "image": "/api/placeholder/400/300",
-      "description": "Product showcase videos for custom helmet painting and design services."
+      "description": "Product showcase videos for custom helmet painting and design services.",
+      "video": {
+        "type": "local",
+        "source": "/videos/1.mp4",
+        "thumbnail": "/api/placeholder/400/300"
+      }
     },
     {
       "id": 6,
@@ -46,7 +71,12 @@
       "category": "Food & Beverage",
       "featured": true,
       "image": "/api/placeholder/400/300",
-      "description": "Appetizing food and restaurant atmosphere videos that capture the dining experience."
+      "description": "Appetizing food and restaurant atmosphere videos that capture the dining experience.",
+      "video": {
+        "type": "youtube",
+        "source": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "thumbnail": "/api/placeholder/400/300"
+      }
     },
     {
       "id": 7,
@@ -54,7 +84,12 @@
       "category": "Food & Beverage",
       "featured": true,
       "image": "/api/placeholder/400/300",
-      "description": "Creative food photography and beverage showcase videos for culinary brands."
+      "description": "Creative food photography and beverage showcase videos for culinary brands.",
+      "video": {
+        "type": "local",
+        "source": "/videos/1.mp4",
+        "thumbnail": "/api/placeholder/400/300"
+      }
     }
   ]
 }
