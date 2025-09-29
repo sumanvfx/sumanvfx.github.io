@@ -10,7 +10,9 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Creative and detail-oriented video editor with 3+ years of experience crafting engaging content for digital platforms.
+I'm a professional video editor with 5 years of experience in creating engaging video content.
+Skilled in editing, color grading, motion graphics, and sound design using industry-standard tools.
+I turn ideas into compelling visual stories for brands, creators, and businesses.            
           </p>
         </div>
 
@@ -18,27 +20,29 @@ const AboutSection = () => {
           {/* Profile Image */}
           <div className="relative">
             <div className="aspect-square bg-gradient-card rounded-2xl p-8 border border-portfolio-border shadow-card">
-              <div className="w-full h-full bg-muted rounded-xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-portfolio-orange rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-background font-bold text-5xl">SS</span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground">Suman Saurabh</h3>
-                  <p className="text-portfolio-orange font-medium">Creative Video Editor | Cinematographer</p>
-                </div>
-              </div>
+
+              <div className="w-full h-full rounded-xl overflow-hidden">
+                <img
+                  src="/images/profile.jpeg" // put your image path here
+                  alt="Suman Saurabh"
+                  className="w-full h-full object-cover"
+                />
+              </div>              
+            
             </div>
           </div>
 
           {/* About Content */}
           <div className="space-y-6">
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">Profile</h3>
+            {/* <div>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Profile Summary</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Proficient in storytelling, editing, and motion graphics with a strong understanding of modern trends and formats. 
-                I specialize in creating compelling visual narratives that captivate audiences and bring brands to life.
+            
+                I specialize in editing, color grading, motion graphics, and sound design using Adobe Premiere Pro, After Effects,
+                and DaVinci Resolve. Whether it’s YouTube videos, social media content, or promotional clips,
+                I turn your raw footage into compelling visual stories that connect with your audience and elevate your brand.
               </p>
-            </div>
+            </div> */}
 
             {/* Experience */}
             <div>
@@ -49,8 +53,16 @@ const AboutSection = () => {
                     <h4 className="font-bold text-foreground">Car&Bike - Video Editor</h4>
                     <p className="text-portfolio-orange text-sm">05/2024 – Present | Delhi, India</p>
                     <p className="text-muted-foreground text-sm mt-2">
-                      Edited 150+ automotive reviews, increasing YouTube engagement by 30%
+• Edited over 450+ automotive reviews and campaigns, increasing YouTube
+engagement by 30%.
                     </p>
+                   <p className="text-muted-foreground text-sm mt-2">
+• Worked closely with motion design and content teams.
+                    </p>
+
+                     <p className="text-muted-foreground text-sm mt-2">
+• Maintained brand tone while delivering fast-paced edits.
+                    </p> 
                   </CardContent>
                 </Card>
 
@@ -59,10 +71,19 @@ const AboutSection = () => {
                     <h4 className="font-bold text-foreground">Premix Studio Pvt. Ltd. - Video Editor</h4>
                     <p className="text-portfolio-orange text-sm">06/2022 – 05/2024 | Delhi, India</p>
                     <p className="text-muted-foreground text-sm mt-2">
-                      Handled corporate videos, promos, and post-production workflows
+•Handled corporate videos, promos, and post-production. • Designed motion graphics using After Effects. • Managed studio editing workflows, file delivery & asset management.
                     </p>
                   </CardContent>
                 </Card>
+                <Card className="bg-gradient-card border-portfolio-border">
+                  <CardContent className="p-4">
+                    <h4 className="font-bold text-foreground">Mentors Adda Pvt. Ltd. - Video Editor</h4>
+                    <p className="text-portfolio-orange text-sm">01/2021 – 01/2022 | Delhi, India</p>
+                    <p className="text-muted-foreground text-sm mt-2">
+• Edited educational video content and social ads.• Assisted in creative planning and asset creation.
+                    </p>
+                  </CardContent>
+                </Card> 
               </div>
             </div>
 
@@ -70,7 +91,7 @@ const AboutSection = () => {
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Skills</h3>
               <div className="flex flex-wrap gap-2">
-                {['Adobe Premiere Pro', 'After Effects', 'Photoshop', 'Illustrator', 'Cinematography'].map((skill) => (
+                {['Adobe Premiere Pro', 'After Effects', 'Photoshop', 'Illustrator', 'Cinematography','DaVinci Resolve'].map((skill) => (
                   <span
                     key={skill}
                     className="bg-portfolio-orange/10 text-portfolio-orange px-3 py-1 rounded-full text-sm font-medium border border-portfolio-orange/20"
