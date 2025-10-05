@@ -45,15 +45,15 @@ const Index = () => {
        {/* Projects Section */}
       <ProjectsSection />
 
+      {/* Services Section */}
+      <ServicesSection />
+
+
       {/* Videography Section */}
       <VideographySection />
 
       {/* Photography Section */}
       <PhotographySection />
-
-      {/* Services Section */}
-      <ServicesSection />
-
      
 
       {/* Contact Form */}
