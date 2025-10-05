@@ -108,14 +108,14 @@ const ContactForm = () => {
                   <div className="w-10 h-10 bg-portfolio-orange rounded-lg flex items-center justify-center">
                     <span className="text-background font-bold">📧</span>
                   </div>
-                  <span className="text-foreground">connect@elevn11.in</span>
+                  <span className="text-foreground">learn.suman25@gmail.com</span>
                 </div>
                 
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-portfolio-orange rounded-lg flex items-center justify-center">
                     <span className="text-background font-bold">📱</span>
                   </div>
-                  <span className="text-foreground">+91 8525987970</span>
+                  <span className="text-foreground">+91 8083484476</span>
                 </div>
               </div>
             </div>
