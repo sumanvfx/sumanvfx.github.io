@@ -42,6 +42,9 @@ const Index = () => {
       {/* About Section */}
       <AboutSection />
 
+       {/* Projects Section */}
+      <ProjectsSection />
+
       {/* Videography Section */}
       <VideographySection />
 
@@ -51,8 +54,7 @@ const Index = () => {
       {/* Services Section */}
       <ServicesSection />
 
-      {/* Projects Section */}
-      <ProjectsSection />
+     
 
       {/* Contact Form */}
       <ContactForm />
