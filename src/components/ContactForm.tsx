@@ -121,7 +121,7 @@ const ContactForm = () => {
             </div>
 
             {/* Contact Form */}
-            <Card className="bg-gradient-card border-portfolio-border shadow-card">
+            {/* <Card className="bg-gradient-card border-portfolio-border shadow-card">
               <CardHeader>
                 <CardTitle className="text-foreground text-xl">Send us a message</CardTitle>
               </CardHeader>
@@ -172,7 +172,7 @@ const ContactForm = () => {
                   </Button>
                 </form>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>
